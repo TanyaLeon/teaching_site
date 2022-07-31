@@ -8,6 +8,8 @@ hero
 _______________*/
 .hero{
     min-height: 100vh;
+    min-width: 68vh;
+
     display: flex;
     justify-content: center;
     align-items: center;
@@ -47,46 +49,88 @@ _______________*/
     }
 }
 .about-section{
-        background: linear-gradient(90deg, rgba(0, 36, 31, 0.192) 0%, rgba(9, 121, 80, 0.041) 51%, rgba(13, 64, 44, 0.482) 100%);
-        border-radius: 1rem;
+    background: linear-gradient(90deg, rgba(0, 36, 31, 0.192) 0%, rgba(9, 121, 80, 0.041) 51%, rgba(13, 64, 44, 0.482) 100%);
+    padding: 5rem;
+    box-sizing: border-box;
+    min-width: 68vh;
+}
+@media screen and (min-width:413px){
+    .about-center{
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+    .section-img, .section-center{
+        flex: 0 0 calc(50% - 2rem);
+    }
+    .section-center{
+        font-size: 1rem;
+        padding-left: 1rem;
+        line-height: 1rem;
+        min-width: 18rem;
+    }
+}
+@media screen and (min-width:730px){
+    .about-center{
+        padding-right: 3rem;
+    }
+    .section-center{
+        text-align: left;
+
+    }
 
 }
-.about-section, .section-title{
-    margin: 3rem 6rem;
-                padding: 1rem 1rem;
-                box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+@media screen and (min-width:1080px){
+    .section-center{
+        font-size: 1.2rem;
+        padding-left: 0rem;
+        line-height: 1.7rem;
+    }
 }
-@media screen and (min-width:992px){
-    .about-section 
-    {display: flex;
-    align-items: center;
+@media screen and (min-width:1200px){
+    .about-center{
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        padding-right: 8rem;
+    }
+    .section-img, .section-center{
+        flex: 0 0 50%;
+    }
+}
+.section-img{
+    display: flex;
     justify-content: center;
+    align-items: center;
 }
-}
-.section-title{
-    text-indent: 2rem;
-    text-decoration: overline 0.5rem ;
-    line-height: 1rem;
-
-        color: rgba(13, 95, 68, 0.699);
-    text-align: center;
+.section-img img{
     border-radius: 0.5rem;
+    height: 20rem;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
 }
-.section-title span{
-    color: rgb(3, 77, 3);
-    font-style: italic;
-}
-.section-center{
-    margin-left: 2rem;
-    font-size: 1.2rem;
-    text-indent: 2rem;
-    line-height: 1.5rem;
-}
+
 .letter::before {
     content: 'S';
 font-size: 4rem;
     color: rgba(13, 95, 68, 0.699);
+
 }
-.section-img img{
-    border-radius: 0.5rem;
+.section-title{
+    color: rgba(13, 95, 68, 0.699);
+    margin-bottom: 1.7rem;
+    margin-top: 1rem;
+    text-align: center;
+    line-height: 2.2rem;
+    text-decoration: overline;
+}
+.section-center{
+    text-indent: 2rem;
+}
+.section-title span{
+    color: rgb(3, 77, 3);
+}
+.together-center{
+    background-color: aqua;
+    height: 10rem;
+    width: 100vw;
 }
