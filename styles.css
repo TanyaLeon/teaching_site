@@ -1,0 +1,92 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+/* ____________
+hero
+_______________*/
+.hero{
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(158, 223, 223);
+}
+.hero-banner{
+    background-color: rgb(118, 209, 209);
+    color: rgb(3, 77, 3);
+    padding: 2rem;
+    text-align: center;
+    border-radius: 5px;
+    box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
+}
+
+.hero-banner p{
+    color: rgb(39, 122, 94);
+    margin-bottom: 1rem;
+    letter-spacing: 0.15rem;
+}
+.hero-banner a{
+    background-color: rgb(88, 177, 177);
+    color: rgb(13, 95, 67);
+    text-decoration: none;
+    border-radius: 10px;
+    padding: 0.25rem;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+    transition: all 0.5s ease-out;;
+
+}
+.hero-banner a:hover{
+    background-color: rgb(36, 190, 190);
+}
+@media screen and (min-width:768px){
+    .hero{
+        background: rgb(0,36,31);
+        background: linear-gradient(90deg, rgba(0,36,31,0.6814075972185749) 0%, rgba(9,121,80,0.19681375968356096) 51%, rgba(13, 64, 44, 0.482) 100%),url('./wrtiting-tools.jpg') center/cover no-repeat;
+    }
+}
+.about-section{
+        background: linear-gradient(90deg, rgba(0, 36, 31, 0.192) 0%, rgba(9, 121, 80, 0.041) 51%, rgba(13, 64, 44, 0.482) 100%);
+        border-radius: 1rem;
+
+}
+.about-section, .section-title{
+    margin: 3rem 6rem;
+                padding: 1rem 1rem;
+                box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+@media screen and (min-width:992px){
+    .about-section 
+    {display: flex;
+    align-items: center;
+    justify-content: center;
+}
+}
+.section-title{
+    text-indent: 2rem;
+    text-decoration: overline 0.5rem ;
+    line-height: 1rem;
+
+        color: rgba(13, 95, 68, 0.699);
+    text-align: center;
+    border-radius: 0.5rem;
+}
+.section-title span{
+    color: rgb(3, 77, 3);
+    font-style: italic;
+}
+.section-center{
+    margin-left: 2rem;
+    font-size: 1.2rem;
+    text-indent: 2rem;
+    line-height: 1.5rem;
+}
+.letter::before {
+    content: 'S';
+font-size: 4rem;
+    color: rgba(13, 95, 68, 0.699);
+}
+.section-img img{
+    border-radius: 0.5rem;
+}
