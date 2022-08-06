@@ -1,14 +1,14 @@
 *{
     margin: 0;
     padding: 0;
-}
 
+}
 /* ____________
 hero
 _______________*/
 .hero{
     min-height: 100vh;
-    min-width: 68vh;
+    min-width: 68vw;
 
     display: flex;
     justify-content: center;
@@ -52,7 +52,8 @@ _______________*/
     background: linear-gradient(90deg, rgba(0, 36, 31, 0.192) 0%, rgba(9, 121, 80, 0.041) 51%, rgba(13, 64, 44, 0.482) 100%);
     padding: 5rem;
     box-sizing: border-box;
-    min-width: 68vh;
+    min-width: 68vw;
+    max-width: 100vw;
 }
 @media screen and (min-width:413px){
     .about-center{
@@ -65,7 +66,8 @@ _______________*/
     }
     .section-center{
         font-size: 1rem;
-        padding-left: 1rem;
+        padding-left: 0rem;
+        padding-right: 2rem;
         line-height: 1rem;
         min-width: 18rem;
     }
@@ -76,6 +78,8 @@ _______________*/
     }
     .section-center{
         text-align: left;
+        padding-left: 2rem;
+        padding-right: 0rem;
 
     }
 
@@ -122,15 +126,60 @@ font-size: 4rem;
     text-align: center;
     line-height: 2.2rem;
     text-decoration: overline;
+    font-size: 1.8rem;
 }
 .section-center{
     text-indent: 2rem;
 }
 .section-title span{
     color: rgb(3, 77, 3);
+    font-style: italic;
+}
+.together{
+    max-width: 100vw;
+    background: linear-gradient(90deg, rgba(0, 36, 12, 0.233) 0%, rgba(9, 121, 54, 0.208) 51%, rgba(0, 255, 225, 0.208) 100%);
+
+}
+.together-title{
+    margin-top: 0rem;
+    line-height: 3.5rem;
+    font-size: 3rem;
+    padding-top: 7rem;
+    padding-bottom: 1rem;
+    font-weight: bolder;
 }
 .together-center{
-    background-color: aqua;
-    height: 10rem;
-    width: 100vw;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
+}
+@media screen and (min-width:400px) {
+    .together-center{
+        margin: auto;
+        padding-bottom: 5rem;
+    }    
+    .item{
+        font-size: 1.2rem;
+        padding: 2rem;
+        color:  rgb(3, 77, 3);
+    }
+    .item img{
+        max-width: 422px;
+        border-radius: 0.5rem;
+        box-sizing: border-box;
+        box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;;
+    }
+    .item h2{
+        padding-bottom: 0.5rem;
+    }
+}
+@media screen and (min-width:600px) {
+    .item{
+        font-size: 1.5rem;
+        letter-spacing: 0.2rem;
+    }
+    .item img{
+        max-width: none;
+    }
 }
