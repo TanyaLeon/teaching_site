@@ -22,6 +22,7 @@ _______________*/
     text-align: center;
     border-radius: 5px;
     box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
+    font-size: 1rem;
 }
 
 .hero-banner p{
@@ -42,12 +43,16 @@ _______________*/
 .hero-banner a:hover{
     background-color: rgb(36, 190, 190);
 }
-@media screen and (min-width:768px){
+
     .hero{
         background: rgb(0,36,31);
         background: linear-gradient(90deg, rgba(0,36,31,0.6814075972185749) 0%, rgba(9,121,80,0.19681375968356096) 51%, rgba(13, 64, 44, 0.482) 100%),url('./wrtiting-tools.jpg') center/cover no-repeat;
     }
-}
+    @media screen and (min-width:600px){
+        .hero-banner{
+            font-size: 1.5rem;
+        }
+    }
 .about-section{
     background: linear-gradient(90deg, rgba(0, 36, 31, 0.192) 0%, rgba(9, 121, 80, 0.041) 51%, rgba(13, 64, 44, 0.482) 100%);
     padding: 5rem;
