@@ -37,7 +37,7 @@ _______________*/
     border-radius: 10px;
     padding: 0.25rem;
     box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
-    transition: all 0.5s ease-out;;
+    transition: all 0.5s linear;
 
 }
 .hero-banner a:hover{
@@ -50,7 +50,7 @@ _______________*/
     }
     @media screen and (min-width:600px){
         .hero-banner{
-            font-size: 1.5rem;
+            font-size: 1.3rem;
         }
     }
 .about-section{
@@ -153,6 +153,7 @@ font-size: 4rem;
     padding-bottom: 1rem;
     font-weight: bolder;
 }
+
 .together-center{
     display: flex;
     flex-wrap: wrap;
@@ -187,4 +188,75 @@ font-size: 4rem;
     .item img{
         max-width: none;
     }
+}
+.item{
+    transition: all 0.5s linear;
+}
+.item:hover{
+    color: rgba(13, 95, 68, 0.699);   
+}
+.contact{
+    background: linear-gradient(90deg, rgba(0, 36, 31, 0.192) 0%, rgba(9, 121, 80, 0.041) 51%, rgba(13, 64, 44, 0.482) 100%);
+    max-width: 100vw;
+}
+.section-centers{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-content: space-around;
+    padding: 10rem 0rem;
+}
+.contact-title, .contact-form{
+    flex: 0 0 calc(50% - 2rem);
+
+}
+.contact-title{
+    padding: 2rem;
+    font-size: 2rem;
+    line-height: 2.5rem;
+    color: rgb(3, 77, 3);
+}
+.contact-title p, .contact-form{
+    padding: 2rem 0rem;
+    font-size: 1.5rem;
+    line-height: 1.5rem;
+}
+
+.contact-title img{
+    max-width: 15rem;
+    border-radius: 0.5rem;
+    box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
+}
+.contact-form{
+    padding: 2rem 0rem;
+    font-size: 1.5rem;
+    line-height: 1.5rem;
+    color: rgb(3, 77, 3);
+}
+.contact-form button{
+    padding: 1rem;
+    margin-bottom: 1rem;
+    border-radius: 0.5rem;
+    border: none;
+    background-color: rgb(0, 109, 128);
+    color: white;
+    font-size: 1rem;
+    letter-spacing: 0.1rem;
+    box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
+    
+}
+i {
+    color:  rgb(0, 109, 128);
+    text-decoration: none;
+    font-size: 3rem;
+    padding-top: 1rem;
+    padding-right: 2rem;
+}
+input{
+    padding: 1rem;
+    border-radius: 0.5rem;
+    border-color: rgba(0, 109, 128, 0.322);
+    font-size: 1rem;
+    margin-bottom: 0.5rem;
 }
