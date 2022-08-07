@@ -204,17 +204,16 @@ font-size: 4rem;
     align-items: center;
     justify-content: center;
     flex-wrap: wrap;
-    align-content: space-around;
     padding: 10rem 0rem;
 }
 .contact-title, .contact-form{
-    flex: 0 0 calc(50% - 2rem);
+    flex: 0 0 calc(50% - 23rem);
 
 }
 .contact-title{
     padding: 2rem;
     font-size: 2rem;
-    line-height: 2.5rem;
+    line-height: 2.7rem;
     color: rgb(3, 77, 3);
 }
 .contact-title p, .contact-form{
@@ -234,6 +233,9 @@ font-size: 4rem;
     line-height: 1.5rem;
     color: rgb(3, 77, 3);
 }
+.contact-form p{
+    padding-top: 2rem;
+}
 .contact-form button{
     padding: 1rem;
     margin-bottom: 1rem;
@@ -249,9 +251,12 @@ font-size: 4rem;
 i {
     color:  rgb(0, 109, 128);
     text-decoration: none;
-    font-size: 3rem;
+    font-size: 2.5rem;
     padding-top: 1rem;
     padding-right: 2rem;
+}
+a:hover, a:focus, a:active, a:visited, a:link{
+    text-decoration: none;
 }
 input{
     padding: 1rem;
@@ -259,4 +264,25 @@ input{
     border-color: rgba(0, 109, 128, 0.322);
     font-size: 1rem;
     margin-bottom: 0.5rem;
+    box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
+}
+i:hover{
+    color: rgba(22, 150, 114, 0.699);   
+}
+button:hover{
+    background-color: rgba(22, 150, 114, 0.699);
+    color: rgb(3, 77, 3);
+    font-weight: bold; 
+    border: 1px solid;
+    border-color: rgba(0, 109, 128, 0.322);
+}
+.footer{
+    background-color: rgba(139, 183, 191, 0.696);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+}
+.things h3{
+    padding: 0.5rem;
 }
