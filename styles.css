@@ -194,6 +194,8 @@ font-size: 4rem;
 }
 .item:hover{
     color: rgba(13, 95, 68, 0.699);   
+    transform: scale(1.1);
+    overflow: hidden;
 }
 .contact{
     background: linear-gradient(90deg, rgba(0, 36, 31, 0.192) 0%, rgba(9, 121, 80, 0.041) 51%, rgba(13, 64, 44, 0.482) 100%);
@@ -285,4 +287,31 @@ button:hover{
 }
 .things h3{
     padding: 0.5rem;
+}
+.contact-icons{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.nav-center{
+    margin-bottom: -5rem;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.nav-center img{
+    max-width: 15vw;
+}
+.nav-thing{
+    width: 50rem;
+    font-size: 1.5rem;
+    color: white;
+    text-decoration: none;
+    display: flex;
+    justify-content: space-between;
+}
+a:hover, a:focus, a:active, a:visited, a:link{
+    text-decoration: none;
+    color: inherit;
 }
