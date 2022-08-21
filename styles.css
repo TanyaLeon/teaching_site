@@ -46,7 +46,7 @@ _______________*/
 
     .hero{
         background: rgb(0,36,31);
-        background: linear-gradient(90deg, rgba(0,36,31,0.6814075972185749) 0%, rgba(9,121,80,0.19681375968356096) 51%, rgba(13, 64, 44, 0.482) 100%),url('./wrtiting-tools.jpg') center/cover no-repeat;
+        background: linear-gradient(90deg, rgba(0,36,31,0.6814075972185749) 0%, rgba(9,121,80,0.19681375968356096) 51%, rgba(13, 64, 44, 0.482) 100%),url('./images/wrtiting-tools.jpg') center/cover no-repeat;
     }
     @media screen and (min-width:600px){
         .hero-banner{
@@ -285,6 +285,11 @@ button:hover{
     align-items: center;
     padding: 2rem;
 }
+.footer a{
+    padding: 0rem;
+    margin-right: 0.5rem;
+    font-size: 1.2rem;
+}
 .things h3{
     padding: 0.5rem;
 }
@@ -292,6 +297,7 @@ button:hover{
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-left: 1rem;
 }
 .nav-center{
     margin-bottom: -5rem;
@@ -310,8 +316,94 @@ button:hover{
     text-decoration: none;
     display: flex;
     justify-content: space-between;
+    transition: all 1s linear;
+}
+.nav-thing a:hover{
+    transform: scale(1.2);
+}
+.nav-thing a{
+    text-shadow: 0px 7px 7px rgb(24, 27, 24);
+
 }
 a:hover, a:focus, a:active, a:visited, a:link{
     text-decoration: none;
     color: inherit;
+}
+@media screen and (max-width:1220px){
+    .nav-thing{
+    display: none;
+    }
+    .nav-center img{
+        max-width: 170px;
+    }
+}
+
+
+
+/* ----------------------------
+-------------------------------
+Read with us section
+------------------------------- */
+.read{
+    max-width: 100vw;
+    background: url(./images/cafe.jpg) center/cover no-repeat fixed;
+    color: antiquewhite;
+    letter-spacing: 0.2rem;
+    border-radius: 0;
+    box-sizing: border-box;
+}
+.read h1, .read h2{
+    text-shadow: rgba(255,255,255,0.5) 0px 3px 3px;
+    -webkit-text-stroke: 2px #fff;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.read h1{
+    text-align: left;
+    margin-top: 3rem;
+    margin-bottom: 2.3rem;
+}
+.read h2{
+    padding-top: 1rem;
+}
+.read-article{
+    background: linear-gradient(90deg, rgba(0,36,31,0.6814075972185749) 0%, rgba(9,121,80,0.19681375968356096) 51%, rgba(13, 64, 44, 0.482) 100%);
+    height: 100%;
+    margin: 1rem;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    
+}
+.read .read-article p{
+    color: antiquewhite;
+    margin-top: 0.75rem;
+}
+.read-article img{
+    max-width: 15vw;
+}
+.reader{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
+}
+.read-article{
+    padding: 1rem;
+}
+@media screen and (min-width:920px) {
+.read-article{
+    flex: 1 1 calc(50% - 4rem);
+    padding: 1rem;
+}
+}
+.right-corner{
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+.reading{
+    margin-left: 2rem;
+    margin-top: 1rem;
+}
+.bookworm{
+    background-color: rgba(210, 105, 30, 0.628);
 }
