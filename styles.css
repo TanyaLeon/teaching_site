@@ -407,3 +407,183 @@ Read with us section
 .bookworm{
     background-color: rgba(210, 105, 30, 0.628);
 }
+
+/* =============================
+================================
+Travel with us section */
+.travel-section{
+    background: url(./images/travel.jpg) center/cover no-repeat;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+}
+.travel-banner h1, .travel-banner p{
+    display: inline-block;
+    padding: 10px;
+    background-color: rgb(184, 183, 186);
+    mix-blend-mode: screen;
+font-family: 'Parisienne', cursive;
+    font-size: 70px;
+    position: relative;
+    top: 8rem;
+}
+
+@media screen and (min-width:893px) {
+    .travel-banner h1, .travel-banner p{
+        position: relative;
+        top: 4rem;
+    }
+}
+@media screen and (min-width:1400px) {
+    .travel-banner h1, .travel-banner p{
+        position: relative;
+        top: -3.5rem;
+    }
+}
+    .travel-banner p{
+    padding-left: 1.5rem;
+} 
+/* nav */
+.travelling a{
+    text-shadow: 1px 1px 2px rgb(88, 88, 103), 0 0 1em blue, 0 0 0.2em rgb(69, 69, 72);
+}
+/* pulse-effect */
+.pulse-effect{
+    display: none;
+}
+@media screen and (min-width:1400px) {
+    .pulse-effect{
+        display: block;
+    }
+}
+.pulse-effect {
+    background-color: #5462f7;
+    height: 50px;
+    width: 50px;
+    border-radius: 100%;
+    position: relative;
+    margin-top: -10rem;
+    margin-left: 42rem;
+}
+.two {
+    position: relative;
+    margin-top: -10rem;
+    margin-left: 62rem;
+}
+.three {
+    position: relative;
+    margin-top: 8rem;
+    margin-left: 82rem;
+}
+.four {
+    position: relative;
+    margin-top: -6rem;
+    margin-left: 28rem;
+}
+.circle{
+    position: absolute;
+    background-color: #699edc;
+    height: 100%;
+    width: 100%;
+    border-radius: 100%;
+    opacity: 0.5;
+    animation: pulse 3s ease-out infinite;
+}
+.circle:nth-of-type(1){
+    animation-delay: -0.5s;
+}
+.circle:nth-of-type(2){
+    animation-delay: -1s;
+}
+.circle:nth-of-type(3){
+    animation-delay: -1.5s;
+}
+@keyframes pulse{
+    100%{
+        transform: scale(1.75);
+        opacity: 0;
+    }
+}
+
+.center-travel{
+    background:linear-gradient(90deg, rgba(0, 36, 31, 0.283) 0%, rgba(9,121,80,0.19681375968356096) 51%, rgba(13, 64, 44, 0.347) 100%);
+    background-color: rgba(16, 118, 202, 0.616);
+    padding-bottom: 2rem;
+}
+
+@media screen and (min-width:1400px) {
+    .center-travel{
+        margin-top: 5.4rem;
+    }
+}
+
+.center-travel-flex{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+
+}
+.photo-album{
+    height: 10rem;
+    width: 15rem;
+    padding: 2rem;
+    margin: 1rem;
+    border-radius: 0.5rem;
+    text-align: center;
+
+}
+.photo-album h2{
+    position: relative;
+    top: 8rem;
+    color: #fff;
+    text-shadow: 3px 3px 0px rgba(32, 19, 183, 0.199);
+}
+.center-travel h1{
+    padding: 2rem;
+    padding-bottom: 1rem;
+    color: #fff;
+    text-shadow: 3px 3px 0px rgba(32, 19, 183, 0.199);
+}
+
+.album-one{
+    background:linear-gradient(90deg, rgba(0,36,31,0.6814075972185749) 0%, rgba(9,121,80,0.19681375968356096) 51%, rgba(13, 64, 44, 0.482) 100%), url(./images/khibiny.jpg) center/cover no-repeat;
+}
+.album-two{
+    background:linear-gradient(90deg, rgba(0,36,31,0.6814075972185749) 0%, rgba(9,121,80,0.19681375968356096) 51%, rgba(13, 64, 44, 0.482) 100%), url(./images/caucasus.jpg) center/cover no-repeat;
+}
+.album-three{
+    background:linear-gradient(90deg, rgba(0,36,31,0.6814075972185749) 0%, rgba(9,121,80,0.19681375968356096) 51%, rgba(13, 64, 44, 0.482) 100%), url(./images/caucasus.jpg) center/cover no-repeat;
+}
+.album-four{
+    background:linear-gradient(90deg, rgba(0,36,31,0.6814075972185749) 0%, rgba(9,121,80,0.19681375968356096) 51%, rgba(13, 64, 44, 0.482) 100%), url(./images/uk.jpg) center/cover no-repeat;
+}
+.album-five{
+    background:linear-gradient(90deg, rgba(0,36,31,0.6814075972185749) 0%, rgba(9,121,80,0.19681375968356096) 51%, rgba(13, 64, 44, 0.482) 100%), url(./images/krasnodar.jpg) center/cover no-repeat;
+}
+.album-six{
+    background:linear-gradient(90deg, rgba(0,36,31,0.6814075972185749) 0%, rgba(9,121,80,0.19681375968356096) 51%, rgba(13, 64, 44, 0.482) 100%), url(./images/sochi.jpg) center/cover no-repeat;
+}
+.album-seven{
+    background:linear-gradient(90deg, rgba(0,36,31,0.6814075972185749) 0%, rgba(9,121,80,0.19681375968356096) 51%, rgba(13, 64, 44, 0.482) 100%), url(./images/belgorod.jpg) center/cover no-repeat;
+}
+.album-eight{
+    background:linear-gradient(90deg, rgba(0,36,31,0.6814075972185749) 0%, rgba(9,121,80,0.19681375968356096) 51%, rgba(13, 64, 44, 0.482) 100%), url(./images/kaliningrad.JPG) center/cover no-repeat;
+}
+.album-nine{
+    background:linear-gradient(90deg, rgba(0,36,31,0.6814075972185749) 0%, rgba(9,121,80,0.19681375968356096) 51%, rgba(13, 64, 44, 0.482) 100%), url(./images/saint\ p.JPG) center/cover no-repeat;
+}
+.album-ten{
+    background:linear-gradient(90deg, rgba(0,36,31,0.6814075972185749) 0%, rgba(9,121,80,0.19681375968356096) 51%, rgba(13, 64, 44, 0.482) 100%), url(./images/moscow.jpg) center/cover no-repeat;
+}
+.album-eleven{
+    background:linear-gradient(90deg, rgba(0,36,31,0.6814075972185749) 0%, rgba(9,121,80,0.19681375968356096) 51%, rgba(13, 64, 44, 0.482) 100%), url(./images/stavropol.jpg) center/cover no-repeat;
+}
+.album-twelve{
+    background: linear-gradient(90deg, rgba(0,36,31,0.6814075972185749) 0%, rgba(9,121,80,0.19681375968356096) 51%, rgba(13, 64, 44, 0.482) 100%),url(./images/min\ waters.jpg) center/cover no-repeat;
+}
+.photo-album:hover{
+    scale: 1.1;
+}
